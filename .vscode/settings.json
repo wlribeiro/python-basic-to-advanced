@@ -1,0 +1,11 @@
+{
+    "python.pythonPath": "C:\\Python39\\python.exe",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "basededados",
+            "database": "${workspaceFolder:py-basic-to-advanced}/\"secao 7 -Base de dados com Python\"/\"156 - SQLite, usando o modulo sqlite3\"/basededados.db"
+        }
+    ]
+}

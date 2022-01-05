@@ -1,0 +1,25 @@
+Exercicio com Abstracao, heranca, encapsulamento e polimorfismo
+
+Crie um sistema bancario (extremamente simpeles) que tem clientes, contas e um banco. 
+A ideia e que o cliente tenha uma conta (poupanca ou corrente) e que possa sacar/depositar
+nessa conta. contas correntes tem um limite extra. Banco tem clientes e contas
+
+
+Dicas:
+criar classe CLIENTE que HERDA da classe PESSOA
+    PESSOA tem nome e idade (com getters)
+    CLIENTE tem conta (Agregacao da classe Contacorrente ou ContaPoupanca)
+
+criar classes ContaPoupanca e Contacorrente que herdam de Conta
+    ContaCorrente deve ter limite extra
+    contas tem agencia, nuumero de conta e saldo
+    contas devem ter metodo para deposito
+    Conta(superclasse) dve ter o metodo sacar abstrato (Abstracao e polimorfismo - as subclasses que implementam o metodo sacar)
+criar classe Banco para Agregar classe de clientes e de contas
+Banco sera responsavelpor autnticar cliente e as contas da seguinte maneira:
+    Banco tem contas e clientes (Agregacao)
+    * Checar se a agencia e daquele banco
+    * Checar se o cliente e daquele banco
+    * Checar se a conta e daquele banco
+
+somente sera possivel sacar se passar pela autenticacao do banco
